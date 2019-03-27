@@ -1,0 +1,19 @@
+{% extends 'page/header.html' %}
+{% load static %}
+
+
+
+
+{% block content %}
+
+
+<img class="rounded mx-auto d-block" src="{% static 'page/imgs/one.png' %}">
+<h1 class="display-4 text-center">Hello World</h1>
+<h2>My first project in Django, what is Django?</h2>
+<p style="font-size: 20px;">Django is a free and open source web application framework written in Python. A framework is nothing more than a collection of modules that make development easier. They are grouped together, and allow you to create applications or websites from an existing source, instead of from scratch. This is how websites - even simple ones designed by a single person - can still include advanced functionality like authentication support, management and admin panels, contact forms, comment boxes, file upload support, and more. In other words, if you were creating a website from scratch you would need to develop these components yourself. By using a framework instead, these components are already built, you just need to configure them properly to match your site.</p>
+
+<div class="col text-center">
+        <a class="btn btn-primary btn-lg" href="{% url 'contact' %}" role="button" style="width: 200px; padding: 30px;font-size: 26px;">Conatct Us</a>
+</div>
+
+{% endblock %}
